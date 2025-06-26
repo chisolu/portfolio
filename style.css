@@ -1,0 +1,340 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 1s ease;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(31, 27, 27);
+    font-family: 'Times New Roman', Times, serif;
+    overflow: auto;
+    cursor: pointer;
+}
+
+.head{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: blue;
+    border: 2px solid white;
+}
+
+.logo{
+    font-size: 25px;
+    color: white;
+    margin-left: 10px;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+.logoup{
+    color: black;
+}
+
+
+.navbar a:hover,
+.navbar a.active{
+   color: red;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+}
+.navbar .top-menu{
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.menu-right{
+    width: 60%;
+    height: 300px; 
+    padding: 4px;
+    position: absolute; 
+    top: 100px;
+    right: 10px;
+    background-color: aliceblue;
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    color: black;
+    cursor: pointer;
+    transition: all 2s ease;
+    display: none;
+} 
+
+.menu-right-open{
+    display: block;
+}
+
+.navbar .top-menu li{
+    font-size: 20px;
+    margin-right: 25px;
+    list-style: none;
+}
+.navbar a{
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+   
+}
+ .menu-right li{
+    color: white;
+    margin: 20px 0px;
+    font-size: 35px;
+    text-align: center;
+    list-style: none;
+}
+.menu-right a{
+    text-decoration: none;
+}
+.menu{
+    color: brown;
+    font-size: 20px;
+    margin: 10px;
+    display: none;
+}  
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: translate(50% 50%);
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.home-content{
+     flex-wrap: wrap;
+     text-transform: capitalize;
+     color: white;
+     font-size: 20px;
+     margin: 0px 15px;
+}
+
+h2{
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+p{
+    margin: 5px 0px;
+    padding: 1px;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+.image img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} 
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+button{
+    width: 40%;
+    height: 60px;
+    box-shadow: 5px 5px 20px black;
+    color: white;
+    display: block;
+    font-size: 18px;
+    background-color: blue;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+button:hover{
+    background-color: wheat;
+    color: black;
+     box-shadow: 5px 5px 20px black;
+}
+#myDIV{
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    animation: mymove 3s infinite;
+}
+
+@keyframes mymove{
+    1%{background-color: black;}
+    40%{background-color: darkred;}
+    20%{background-color: lawngreen;}
+}
+
+.clap{
+    position: fixed;
+    top: 30;
+    left: 0;
+    margin: 20px 35px;
+    background-color: white;
+    border: 2px  solid blue;
+    padding: 5px;
+    border-radius: 8px;
+}
+.footer{
+    position: absolute;
+    bottom: 7%;
+    left: 28%;
+
+}
+.footer i{
+    margin: 0 15px;
+    font-size: 30px;
+    color: blue;
+    padding: 6px;
+    font-size: 25px;
+    border-radius: 8px;
+    transform: translatey(-0.5rem);
+    background-color: white;
+    cursor: col-resize;
+} 
+.footer .i:hover{
+    background-color: wheat;
+    color: black;
+}
+
+span{
+    color: blue;
+}
+@media(max-width: 600px){
+    body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(31, 27, 27);
+    font-family: 'Times New Roman', Times, serif;
+}
+.head{
+    width: 100%;
+    height: 10%;
+}
+.home{
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.home-content{
+     text-transform: capitalize;
+     color: white;
+     display: grid;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     font-size: 15px;
+     
+}
+h2{
+    font-size: 27px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+button{
+    width: 35%;
+    height: 55px;
+    box-shadow: 5px 5px 20px black;
+    color: white;
+    display: block;
+    margin: 0 10px;
+    font-size: 18px;
+    background-color: blue;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#myDIV{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    animation: mymove 3s infinite;
+}
+
+@keyframes mymove{
+    1%{background-color: black;}
+    40%{background-color: darkred;}
+    20%{background-color: lawngreen;}
+}
+
+.clap{
+    position: fixed;
+    top: 70%;
+    left:  30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 4px  solid blue;
+    padding: 7px;
+    border-radius: 8px;
+}
+.image img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-top: 15px;
+} 
+.top-menu li{
+    height: 100vh;
+    display: none;
+    transition: .2s ease;
+}
+.menu{
+    color: brown;
+    font-size: 25px;
+    margin: 0  15px;
+    display: block;
+    transform: translatey(-0.5rem);
+}
+.footer{
+position: absolute;
+bottom: 8%;
+left: 17%;
+
+}
+.footer i{
+    margin: 0 10px;
+    font-size: 20px;
+    color: blue;
+    background-color: white;
+    padding: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.top-menu:hover{
+    background-color: green;
+    color: yellow;
+}
+
+
+}
