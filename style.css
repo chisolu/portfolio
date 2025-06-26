@@ -288,7 +288,7 @@ button{
 
 .clap{
     position: fixed;
-    top: 70%;
+    top: 76%;
     left:  30%;
     display: flex;
     align-items: center;
@@ -318,7 +318,7 @@ button{
 }
 .footer{
 position: absolute;
-bottom: 8%;
+bottom: 5%;
 left: 17%;
 
 }
